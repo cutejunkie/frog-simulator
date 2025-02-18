@@ -9,6 +9,7 @@ def main():
     player = Player()
     clock = 0  # sth like stopper
     allflies = []
+    background = pygame.image.load("./images/background.png")
 
     while run:
         clock += pygame.time.Clock().tick(60) / 1000 # max 60 fps /// %1000 to get seconds
@@ -31,7 +32,7 @@ def main():
                 score += 1
 
         # background
-        window.fill((247, 198, 223))
+        window.blit(background, (0, 0))
         player.draw()
         for fly in allflies:
             fly.draw()
