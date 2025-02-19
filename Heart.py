@@ -4,7 +4,7 @@ from random import randint
 
 class Heart():
     def __init__(self):
-        self.image = pygame.image.load("./images/bomb.png")
+        self.image = pygame.image.load("./images/heart.png")
         self.p_width, self.p_height = self.image.get_size()
         self.x_cord = randint(0, window_width - self.p_width)
         self.y_cord = randint(0, window_height - self.p_height)

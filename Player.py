@@ -3,7 +3,7 @@ from config import window, window_width, window_height
 
 class Player:
     def __init__(self):
-        self.speed = 10
+        self.speed = 5
         self.x_cord = 0
         self.y_cord = 0
         
