@@ -10,9 +10,12 @@ class Fly():
         self.y_cord = randint(0, window_height - self.p_height)
         self.hitbox = pygame.Rect(self.x_cord, self.y_cord, self.p_width, self.p_height)
 
+
     def tick(self):
         # refreshing hitbox
         self.hitbox = pygame.Rect(self.x_cord, self.y_cord, self.p_width, self.p_height)
 
+
     def draw(self):
         window.blit(self.image, (self.x_cord, self.y_cord))
+        

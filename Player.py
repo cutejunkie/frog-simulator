@@ -3,7 +3,7 @@ from config import window, window_width, window_height
 
 class Player:
     def __init__(self):
-        self.speed = 3
+        self.speed = 5
         self.x_cord = 0
         self.y_cord = 0
         self.image = pygame.image.load("./images/player.png")
@@ -43,6 +43,7 @@ class Player:
 
         # refreshing hitbox
         self.hitbox = pygame.Rect(self.x_cord, self.y_cord, self.p_width, self.p_height)
+
 
     # showing player in window
     def draw(self):
