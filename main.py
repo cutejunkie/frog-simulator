@@ -14,7 +14,7 @@ def main():
     allhearts = []
 
     score = 0
-    hearts = 1
+    hearts = 3
     clock_fly = 0  # sth like stopper
     clock_dis_fly = -5  # for dissapearing of flies + delay
     clock_bomb = 0  # appearance of bomb
