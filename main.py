@@ -14,7 +14,7 @@ def main():
     allhearts = []
 
     score = 0
-    hearts = 3
+    hearts = 1
     clock_fly = 0  # sth like stopper
     clock_dis_fly = -5  # for dissapearing of flies + delay
     clock_bomb = 0  # appearance of bomb
@@ -133,10 +133,12 @@ def main():
         pygame.display.update()
 
         if hearts == 0:
+            bg = pygame.image.load("./images/gameover.png")  
+            window.blit(bg, (0, 0))  
+            pygame.display.update()  
+            pygame.time.delay(5000)  # wait 5s
             run = False
 
-
-    print(score)
 
 if __name__ == "__main__":
     main()
